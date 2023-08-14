@@ -7,7 +7,7 @@ def scrub_ip_addresses(log):
             scrubb_log.write(re.sub(ip_pattern, 'X.X.X.X', line))
     return
 
-
+#
 with open("kubelet_service.log", "r") as log:
     scrub_ip_addresses(log)
 
